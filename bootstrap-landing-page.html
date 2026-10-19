@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page - Bootstrap 5</title>
+    <!-- Nhúng Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+    <!-- 1. BANNER / HERO SECTION -->
+    <!-- Sử dụng utility classes thay cho jumbotron -->
+    <header class="bg-dark text-white text-center py-5">
+        <div class="container py-5">
+            <h1 class="display-4 fw-bold">Khám Phá Giải Pháp Mới</h1>
+            <p class="lead mb-4">Nâng tầm doanh nghiệp của bạn với công nghệ hiện đại và thiết kế tối ưu.</p>
+            <a href="#register" class="btn btn-primary btn-lg">Đăng Ký Ngay</a>
+        </div>
+    </header>
+
+    <!-- 2. PHẦN GIỚI THIỆU (Intro) -->
+    <section class="container py-5">
+        <div class="row align-items-center">
+            <!-- Cột hình ảnh (sử dụng img-fluid để ảnh responsive) -->
+            <div class="col-md-6 mb-4 mb-md-0">
+                <img src="https://picsum.photos/600/400?random=1" class="img-fluid rounded shadow" alt="Hình ảnh giới thiệu">
+            </div>
+            <!-- Cột nội dung -->
+            <div class="col-md-6">
+                <h2 class="fw-bold mb-3">Về Dịch Vụ Của Chúng Tôi</h2>
+                <p>Chúng tôi cung cấp các giải pháp toàn diện giúp tối ưu hóa quy trình làm việc, tăng cường hiệu suất và mang lại giá trị thực sự cho khách hàng. Với đội ngũ giàu kinh nghiệm, mọi vấn đề của bạn sẽ được giải quyết nhanh chóng.</p>
+                <button class="btn btn-outline-secondary">Tìm hiểu thêm</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. DANH SÁCH TÍNH NĂNG (Features) -->
+    <section class="bg-light py-5">
+        <div class="container">
+            <h2 class="text-center fw-bold mb-5">Tính Năng Nổi Bật</h2>
+            <div class="row g-4 text-center">
+                <!-- Tính năng 1 -->
+                <div class="col-md-4">
+                    <img src="https://picsum.photos/100/100?random=2" class="img-fluid rounded-circle mb-3 shadow-sm" alt="Tốc độ">
+                    <h4>Tốc Độ Vượt Trội</h4>
+                    <p>Hệ thống được tối ưu hóa để mang lại tốc độ xử lý nhanh nhất, tiết kiệm thời gian của bạn.</p>
+                </div>
+                <!-- Tính năng 2 -->
+                <div class="col-md-4">
+                    <img src="https://picsum.photos/100/100?random=3" class="img-fluid rounded-circle mb-3 shadow-sm" alt="Bảo mật">
+                    <h4>Bảo Mật Tối Đa</h4>
+                    <p>Dữ liệu của bạn được bảo vệ an toàn với công nghệ mã hóa tiên tiến hàng đầu hiện nay.</p>
+                </div>
+                <!-- Tính năng 3 -->
+                <div class="col-md-4">
+                    <img src="https://picsum.photos/100/100?random=4" class="img-fluid rounded-circle mb-3 shadow-sm" alt="Hỗ trợ">
+                    <h4>Hỗ Trợ 24/7</h4>
+                    <p>Đội ngũ chuyên viên luôn túc trực để hỗ trợ và giải đáp mọi thắc mắc của bạn bất cứ lúc nào.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. CALL TO ACTION (CTA) SECTION -->
+    <section id="register" class="container text-center py-5">
+        <h2 class="fw-bold mb-3">Bạn Đã Sẵn Sàng Bắt Đầu?</h2>
+        <p class="mb-4">Tham gia cùng hàng ngàn khách hàng đã tin tưởng và sử dụng dịch vụ của chúng tôi.</p>
+        <a href="#" class="btn btn-success btn-lg px-5">Tham Gia Ngay</a>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-dark text-white text-center py-3">
+        <p class="mb-0">&copy; 2026 Landing Page Mẫu. Thiết kế bằng Bootstrap 5.</p>
+    </footer>
+
+    <!-- Nhúng Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
