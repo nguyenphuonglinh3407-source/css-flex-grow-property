@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Grid System Layout</title>
+    <!-- Nhúng Bootstrap CSS từ CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+</head>
+<body class="d-flex flex-column min-vh-100">
+
+    <!-- 1. Header -->
+    <header class="bg-primary text-white text-center py-4">
+        <h1 class="m-0">Tiêu đề Trang Web</h1>
+    </header>
+
+    <!-- 2. Navbar với Dropdown -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">Logo</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link active" href="#">Trang chủ</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Giới thiệu</a></li>
+                    <!-- Dropdown Menu -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                            Sản phẩm
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Sản phẩm A</a></li>
+                            <li><a class="dropdown-item" href="#">Sản phẩm B</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="#">Liên hệ</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 3. Bootstrap Containers & Grid System -->
+    <div class="container my-5 flex-grow-1">
+        <div class="row">
+            <!-- Main Content: Chiếm 8/12 cột trên Desktop -->
+            <main class="col-md-8 mb-4">
+                <div class="p-4 bg-white border rounded shadow-sm h-100">
+                    <h2 class="text-primary">Nội dung chính (Main Content)</h2>
+                    <p>Đây là khu vực hiển thị nội dung chính của trang web.</p>
+                    <p>Việc sử dụng class <code>col-md-8</code> có nghĩa là: Bắt đầu từ kích thước màn hình máy tính bảng trở lên (≥768px), khối này sẽ chiếm <strong>8 phần</strong> trong hệ thống lưới 12 cột của Bootstrap.</p>
+                    <p>Khi xem trên màn hình nhỏ hơn (Điện thoại), nó sẽ tự động chiếm toàn bộ chiều rộng (12 cột).</p>
+                </div>
+            </main>
+
+            <!-- Sidebar: Chiếm 4/12 cột trên Desktop -->
+            <aside class="col-md-4 mb-4">
+                <div class="p-4 bg-light border rounded shadow-sm h-100">
+                    <h3 class="text-success">Cột phụ (Sidebar)</h3>
+                    <p>Khu vực này dùng để chứa thông tin phụ, danh mục, tin tức hoặc quảng cáo.</p>
+                    <p>Với class <code>col-md-4</code>, khối này sẽ chiếm <strong>4 phần</strong> còn lại của hàng. Khi ở giao diện di động, nó sẽ tự động bị đẩy xuống dưới Main Content một cách gọn gàng.</p>
+                </div>
+            </aside>
+        </div>
+    </div>
+
+    <!-- 4. Footer -->
+    <footer class="bg-dark text-white text-center py-3 mt-auto">
+        <div class="container">
+            <p class="mb-0">&copy; 2026 Bản quyền thuộc về doanh nghiệp của bạn.</p>
+        </div>
+    </footer>
+
+    <!-- Nhúng Bootstrap JavaScript (Dành cho Navbar Toggler và Dropdown) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
